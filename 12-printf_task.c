@@ -119,7 +119,7 @@ int write_unsgnd(int is_negative, int ind,
 	UNUSED(size);
 
 	if (precision == 0 && ind == BUFF_SIZE - 2 && buffer[ind] == '0')
-		return (0); 
+		return (0);
 
 	if (precision > 0 && precision < length)
 		padd = ' ';
@@ -140,11 +140,11 @@ int write_unsgnd(int is_negative, int ind,
 
 		buffer[i] = '\0';
 
-		if (flags & F_MINUS) 
+		if (flags & F_MINUS)
 		{
 			return (write(1, &buffer[ind], length) + write(1, &buffer[0], i));
 		}
-		else 
+		else
 		{
 			return (write(1, &buffer[0], i) + write(1, &buffer[ind], length));
 		}

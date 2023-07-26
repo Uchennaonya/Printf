@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -113,3 +114,4 @@ int write_pointer(char buffer[], int ind, int length,
 int write_unsgnd(int is_negative, int ind,
 char buffer[],
 	int flags, int width, int precision, int size);
+#endif

@@ -1,15 +1,15 @@
 #include "main.h"
 
-//CODE FOR CALCULATING THE WIDTH OF PRINTING
+/*CODE FOR CALCULATING THE WIDTH OF PRINTING*/
 
 /**
  * get_width - responsible for calculating  the width for printing
  * @i: consists of list of arguments to be printed.
  * @list:This involves  list of arguments.
  * @format: A formatted string to print  arguments.
- * Return:  It returns the width 
+ * Return:  It returns the width
  */
-int get_width(const char *format, int *i, va_list list) //Prototype used
+int get_width(const char *format, int *i, va_list list) /*Prototype used*/
 {
 	int curr_i;
 	int width = 0;

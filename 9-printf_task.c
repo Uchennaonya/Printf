@@ -1,6 +1,6 @@
 #include "main.h"
 
-//CODE TO PRINT ARGUMENTS BASED ON ITS TYPE
+/*CODE TO PRINT ARGUMENTS BASED ON ITS TYPE*/
 
 /**
  * handle_print -  This will prints argument based on its type
@@ -9,12 +9,15 @@
  * @list:  Displays List of arguments to be printed.
  * @ind: Shows an ind
  * @buffer:This a  Buffer array that will handle print.
- * @flags:This will calculates the  active flags
+ * @flags::calculates the flags
+ * calculates the  active flags
  * @width: It is meant get width
  * @size:A Size specifier
+ *
  * Return: value 1 or 2;
  */
-int handle_print(const char *fmt, int *ind, va_list list, char buffer[],   //prototype used
+
+int handle_print(const char *fmt, int *ind, va_list list, char buffer[]
 	int flags, int width, int precision, int size)
 {
 	int i, unknow_len = 0, printed_chars = -1;
